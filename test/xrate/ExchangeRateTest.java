@@ -50,7 +50,6 @@ public class ExchangeRateTest {
     }
 
     @Test
-    @Ignore
     public void checkUSDvsGBP20100625online() throws IOException, ParserConfigurationException, SAXException {
         ExchangeRateReader xrReader = new ExchangeRateReader("http://api.finance.xaviermedia.com/api/");
         float rate = xrReader.getExchangeRate("USD", "GBP", 2010, 6, 25);
